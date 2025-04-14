@@ -1,0 +1,89 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Luxurious+Roman&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Sans", sans-serif;  
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) #030728 no-repeat center;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+.card-list .card-item{
+    color: #fff;
+    user-select:none;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background:rgba(255,255,255,0.2);
+    background:1px solid rgba(255,2555,255, 0.5)
+}
+.card-list .card-item .user-image{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 40px;
+border: 3px solid #fff;
+}
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.card-list .card-item .message-button{
+    font-size: 1.15rem;
+    padding: 10px 35px;
+    color: black;
+    border-radius: 6px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.card-list .card-item .message-button:hover{
+    background: rgba(255,255,255,0.1);
+    border: solid #fff;
+    color:#fff;
+
+}
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+    transform: 0.2s ease;
+    cursor: pointer;
+ 
+}
+.slider-wrapper .swiper-slide-button{
+color: #2a3bd2;
+
+}
+@media(max-width:768){
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    } 
+    .slider-wrapper .swiper-slide-button{
+        display: none;
+    } 
+}
